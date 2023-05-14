@@ -209,19 +209,9 @@ def menu_log():
             except (KeyError,IOError,AttributeError):_dvanme_ferly_('%s║'%(O));jalan('%s╚══[%s!%s] %sCookies Invalid'%(M,P,M,P));bersih();menu_log()
     elif pmu in ['3','03','003','c']:
         clear()
-        var_tutor()
-        pf = _cici_dapunta_('%s╠══[%s•%s] %sPilih : '%(O,P,O,P));_dvanme_ferly_('%s║'%(O))
-        if pf in ['']:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu_log()
-        elif pf in ['1','01','001','a']:os.system('xdg-_dapunta_dapunta_ https://youtu.be/iUfEGHXdQQM');_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu_log()
-        elif pf in ['2','02','002','b']:os.system('xdg-_dapunta_dapunta_ https://youtu.be/iUfEGHXdQQM');_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu_log()
-        elif pf in ['3','03','003','c']:os.system('xdg-_dapunta_dapunta_ https://youtu.be/9snR31AI_h8');tutor_target();_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu_log()
-        elif pf in ['4','04','004','d']:tutor_crack();_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu_log()
-        else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu_log()
-    elif pmu in ['4','04','004','d']:
-        clear()
         var_author();_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu_log()
-    elif pmu in ['5','05','005','e']:hasil()
-    elif pmu in ['6','06','006','f']:cek_hasil()
+    elif pmu in ['4','04','004','d']:hasil()
+    elif pmu in ['5','05','005','e']:cek_hasil()
     elif pmu in ['0','00','000','z']:jalan('%s╠══[%s!%s] %sTerima Kasih Telah Menggunakan SC Ini'%(O,P,O,P));jalan('%s╚══[%s!%s] %sSemoga Harimu Menyenangkan :)\n'%(O,P,O,P));time.sleep(3);bersih();clear();_ferly_exit_()
     else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu_log()
 
