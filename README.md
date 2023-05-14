@@ -8,7 +8,10 @@ Welcome
 #### ★ Social Accounts ★
 <a href="https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY"><img src="https://raw.githubusercontent.com/Dumai-991/Dumai-991/main/Image/images.png" alt="alt text" width="75" height="75"></a>
 # ✭ ELITE CRACK
-### Dibuat Dengan ❤️ Oleh Dapunta & Rizal
+### Multi Brute Force Facebook
+  
+### • - Made With [ Dapunta AR - And - (XNSCODE Project) ]
+### • - Developer : Dvanmeploph [ Ferly Afriliyan ]
 ```
 Author:
 - Dapunta Khurayra X
@@ -37,7 +40,7 @@ Terimakasih Kepada :
 [✯] Crack With TTL/DOB  
 ```
 ### ⇨  Install Script Di Termux
-```
+```python
 termux-change-repo
 rm -rf $HOME/elite
 pkg update && pkg upgrade
@@ -46,7 +49,7 @@ pkg install python-pip
 git clone https://github.com/Dvanmeploph/elite
 ```
 ### ⇨  Menjalankan Script
-```
+```python
 cd elite
 git pull
 pip3 install -r requirements.txt
