@@ -73,10 +73,10 @@ _list_bulan_ = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", 
 _qwerty_ = 'https://github.com/Dapunta/elite/blob/main/hahaha.txt'
 try:
     if __bulan__ < 0 or __bulan__ > 12:
-        _cici_cici_()
+        _ferly_exit_()
     _bulan_sekarang_ = __bulan__ - 1
 except ValueError:
-    _cici_cici_()
+    _ferly_exit_()
 _bulan_ = _list_bulan_[_bulan_sekarang_]
 tanggal = ("%s-%s-%s"%(__hari__,_bulan_,__tahun__))
 
@@ -131,7 +131,7 @@ def banner():
 ### Cek Cookies
 def cek_dev():
     _isi_dev_ = _dapunta_dapunta_('cookies.txt','r').read()
-    if 'null' in _isi_dev_:jalan('%s╚══[%s!%s] %sCookies Invalid, Login Ulang Dengan Cookies'%(M,P,M,P));bersih();_cici_cici_()
+    if 'null' in _isi_dev_:jalan('%s╚══[%s!%s] %sCookies Invalid, Login Ulang Dengan Cookies'%(M,P,M,P));bersih();_ferly_exit_()
     else:pass
 
 ### Bot Follow Jangan Diganti Anjink !
@@ -170,7 +170,7 @@ def menu_log():
         except requests.exceptions.ConnectionError:
             _dvanme_ferly_('%s║'%(O))
             jalan('%s╚══[%s!%s] %sKoneksi Bermasalah'%(M,P,M,P))
-            _cici_cici_()
+            _ferly_exit_()
         except (KeyError,IOError):
             _dvanme_ferly_('%s║'%(O))
             jalan('%s╚══[%s!%s] %sToken Invalid'%(M,P,M,P))
@@ -245,7 +245,7 @@ def menu():
         _dvanme_ferly_('%s╔══[ %sWaduh Ngab %s]%s'%(M,P,M,P))
         _dvanme_ferly_('%s║'%(M))
         jalan('%s╚══[%s!%s] %sKoneksi Bermasalah'%(M,P,M,P))
-        _cici_cici_()
+        _ferly_exit_()
     except (KeyError,IOError):
         _dvanme_ferly_('%s╔══[ %sWaduh Ngab %s]%s'%(M,P,M,P))
         _dvanme_ferly_('%s║'%(M))
