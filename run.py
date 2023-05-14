@@ -447,7 +447,7 @@ def main_komen(_dapunta_):
     if len(_dapunta_dapunta_(_file_).read().splitlines()) == 0:_dvanme_ferly_('\n%s╚══[%s!%s] %sPostingan Tidak Ditemukan'%(M,P,M,P));_cici_cici_()
     _dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def scrape_komen(_dapunta_,_url_,_file_):
-    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');_dapunta_cici_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
+    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
     try: 
         for _isi_ in _ses_par_.find_all('h3'):
             for _id_ in _isi_.find_all('a',href=True):
@@ -609,7 +609,7 @@ class dump_grup:
             if "Lihat Postingan Lainnya" in i.text:
                 while True:
                     try:self.dump_id("https://m.facebook.com/"+i.get("href"));break
-                    except Exception as e:_dapunta_cici_('\r%s╚══[%s!%s] %sMengulangi'%(M,P,M,P));continue
+                    except Exception as e:_dvanme_ferly_('\r%s╚══[%s!%s] %sMengulangi'%(M,P,M,P));continue
 
 ### Convert Username To ID
 def _get_id_(username):
