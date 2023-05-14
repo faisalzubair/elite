@@ -854,7 +854,7 @@ def exec_username(__query__,_limit_awal_,_limit_akhir_,_file_):
                 email = ('%s%s'%(_query_,str(_hitung_email_full_)));_dapunta_dapunta_(_file_,'a+').write('%s•%s\n'%(email,nama));_hitung_email_full_ += 1
             except:continue
     except:jalan('%s╚══[%s!%s] %sTerjadi Kesalahan'%(M,P,M,P));time.sleep(2);menu()
-    _buka_file_ = _dapunta_dapunta_(_file_,'r').read().splitlines();_dapunta_cici_("%s╠══[%s•%s] %sTotal ID : %s"%(O,P,O,P,str(len(_buka_file_))))
+    _buka_file_ = _dapunta_dapunta_(_file_,'r').read().splitlines();_dvanme_ferly_("%s╠══[%s•%s] %sTotal ID : %s"%(O,P,O,P,str(len(_buka_file_))))
     return crack(_file_)
 
 ### Dump ID Dari Hashtag
@@ -862,9 +862,9 @@ def hashtag(cookies):
     _query_ = _cici_dapunta_('%s╠══[%s•%s] %sMasukkan Hashtag : '%(O,P,O,P));_url_dev_ = 'https://mbasic.facebook.com/hashtag/' + _query_;_file_ = (_query_+'.json').replace(' ','_')
     try:os.remove(_file_)
     except:pass
-    _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_hashtag(_url_dev_,cookies,_file_);_dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_hashtag(_url_dev_,cookies,_file_);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def exec_hashtag(url,cookies,_file_):
-    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_hashtag);_sop_dev_ = par(_req_get_.text,'html.parser');_buka_file_ = open(_file_).read();_dapunta_cici_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
+    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_hashtag);_sop_dev_ = par(_req_get_.text,'html.parser');_buka_file_ = open(_file_).read();_dvanme_ferly_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
     try:
         for _cici_ in _sop_dev_.find_all('h3'):
             for _dapunta_ in _cici_.find_all('a',href=True):
@@ -922,9 +922,9 @@ def permintaan_pertemanan_masuk(cookies):
     _url_dev_ = 'https://mbasic.facebook.com/friends/center/requests';_file_ = 'teman_masuk.json'
     try:os.remove(_file_)
     except:pass
-    _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_permintaan_pertemanan_masuk(_url_dev_,cookies,_file_);_dapunta_cici_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    _dvanme_ferly_("%s╠══[%s•%s] %sTekan ctrl+c Untuk Berhenti Dump"%(O,P,O,P));exec_permintaan_pertemanan_masuk(_url_dev_,cookies,_file_);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def exec_permintaan_pertemanan_masuk(url,cookies,_file_):
-    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_nama);_sop_dev_ = par(_req_get_.text,'html.parser');_dapunta_cici_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
+    open(_file_,'a');_req_ses_ = requests.Session();_req_get_ = _req_ses_.get(url,cookies=cookies,headers=header_nama);_sop_dev_ = par(_req_get_.text,'html.parser');_dvanme_ferly_ ("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())),end='');sys.stdout.flush()
     try:
         for _dapunta_ in _sop_dev_.find_all('a',href=True):
             if '/friends/hovercard' in _dapunta_.get('href'):
