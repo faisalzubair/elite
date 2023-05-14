@@ -212,7 +212,7 @@ def menu_log():
         var_author();_cici_dapunta_('%s╚══[ %sKembali %s]%s'%(O,P,O,P));menu_log()
     elif pmu in ['5','05','005','e']:hasil()
     elif pmu in ['6','06','006','f']:cek_hasil()
-    elif pmu in ['0','00','000','z']:jalan('%s╠══[%s!%s] %sTerima Kasih Telah Menggunakan SC Ini'%(O,P,O,P));jalan('%s╚══[%s!%s] %sSemoga Harimu Menyenangkan :)\n'%(O,P,O,P));time.sleep(3);bersih();clear();_cici_cici_()
+    elif pmu in ['0','00','000','z']:jalan('%s╠══[%s!%s] %sTerima Kasih Telah Menggunakan SC Ini'%(O,P,O,P));jalan('%s╚══[%s!%s] %sSemoga Harimu Menyenangkan :)\n'%(O,P,O,P));time.sleep(3);bersih();clear();_ferly_exit_()
     else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu_log()
 
 ### Menu Utama
@@ -390,7 +390,7 @@ def publik(token):
         _dvanme_ferly_('%s╠══[%s•%s] %sTotal ID : %s'%(O,P,O,P,len(id)))
         return crack(xc)
     except (KeyError,IOError):
-        _cici_cici_('%s╚══[%s!%s] %sToken/Cookies Invalid Atau ID Tidak Ditemukan'%(M,P,M,P))
+        _ferly_exit_('%s╚══[%s!%s] %sToken/Cookies Invalid Atau ID Tidak Ditemukan'%(M,P,M,P))
 
 ### Dump ID From Followers
 def followers(cookies):
@@ -420,7 +420,7 @@ def main_likers(_dapunta_):
     try:os.remove(_query_+'.json')
     except:pass
     _dapunta_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier='+_query_);scrape_likers(_dapunta_,_url_,_file_)
-    if len(_dapunta_dapunta_(_file_).read().splitlines()) == 0:_dvanme_ferly_('\n%s╚══[%s!%s] %sPostingan Tidak Ditemukan'%(M,P,M,P));_cici_cici_()
+    if len(_dapunta_dapunta_(_file_).read().splitlines()) == 0:_dvanme_ferly_('\n%s╚══[%s!%s] %sPostingan Tidak Ditemukan'%(M,P,M,P));_ferly_exit_()
     _dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def scrape_likers(_dapunta_,_url_,_file_):
     _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
@@ -444,7 +444,7 @@ def main_komen(_dapunta_):
     try:os.remove(_query_+'.json')
     except:pass
     _dapunta_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/'+_query_);scrape_komen(_dapunta_,_url_,_file_)
-    if len(_dapunta_dapunta_(_file_).read().splitlines()) == 0:_dvanme_ferly_('\n%s╚══[%s!%s] %sPostingan Tidak Ditemukan'%(M,P,M,P));_cici_cici_()
+    if len(_dapunta_dapunta_(_file_).read().splitlines()) == 0:_dvanme_ferly_('\n%s╚══[%s!%s] %sPostingan Tidak Ditemukan'%(M,P,M,P));_ferly_exit_()
     _dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())));return crack(_file_)
 def scrape_komen(_dapunta_,_url_,_file_):
     _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');_dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
