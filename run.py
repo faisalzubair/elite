@@ -132,11 +132,17 @@ def banner():
     _logo_line_3_ = ('%s / _// / / __/ -_)   / /   ║  %sCoded By Dapunta AR  %s║'%(O,P,O))
     _logo_line_4_ = ('%s/___/_/_/\__/\__/  _/ /_   ║    %s• XNSCODETEAM •    %s║'%(O,P,O))
     _logo_line_5_ = ('%sMulti Brute Force %s/____/   ╚═══════════════════════╝'%(P,O))
+    _logo_line_6_ = ('%s[%s•%s] %sJika Ingin Login Menggunakan Token Facebook'%(M,P,M,P))
+    _logo_line_7_ = ('%s[%s•%s] %sGunakan Script Di Bawah Ini Untuk Mendapatkan Token Facebook'%(M,P,M,P))
+    _logo_line_8_ = ('%s[%s•%s] %shttps://github.com/Dvanmeploph/Get-Token'%(M,P,M,P))
     _dvanme_ferly_(_logo_line_1_)
     _dvanme_ferly_(_logo_line_2_)
     _dvanme_ferly_(_logo_line_3_)
     _dvanme_ferly_(_logo_line_4_)
-    _dvanme_ferly_(_logo_line_5_+'\n')
+    _dvanme_ferly_(_logo_line_5_)
+    _dvanme_ferly_(_logo_line_6_)
+    _dvanme_ferly_(_logo_line_7_)
+    _dvanme_ferly_(_logo_line_8_)+'\n')
 
 ### Cek Cookies
 def cek_dev():
