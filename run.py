@@ -142,7 +142,7 @@ def banner():
     _dvanme_ferly_(_logo_line_5_)
     _dvanme_ferly_(_logo_line_6_)
     _dvanme_ferly_(_logo_line_7_)
-    _dvanme_ferly_(_logo_line_8_)+'\n')
+    _dvanme_ferly_(_logo_line_8_+'\n')
 
 ### Cek Cookies
 def cek_dev():
