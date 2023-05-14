@@ -1499,7 +1499,7 @@ def cek_hasil():
 def var_menu():
     _dvanme_ferly_('%s╔[ %sPilih Metode Login %s]'%(O,P,O))
     _dvanme_ferly_('%s╠══[%s1%s] %sLogin Dengan Token [%sAkses Terbatas%s]'%(O,P,O,P,O,P))
-    _dvanme_ferly_('%s╠══[%s2%s] %sLogin Dengan Cookies [%sAkses Tak Terbatas%s]'%(O,P,O,P,O,P))
+    _dvanme_ferly_('%s╠══[%s2%s] %sLogin Dengan Cookies [%sBelum Tersedia%s]'%(O,P,O,P,O,P))
     _dvanme_ferly_('%s║'%(O))
     _dvanme_ferly_('%s╠[ %sFitur Tanpa Login %s]'%(O,P,O))
     _dvanme_ferly_('%s╠══[%s3%s] %sInfo Author & Team Project'%(O,P,O,P))
