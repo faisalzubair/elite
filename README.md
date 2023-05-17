@@ -53,7 +53,7 @@ git clone https://github.com/Dvanmeploph/elite
 cd elite
 git pull
 pip3 install -r requirements.txt
-python run.py
+python run.cpp
 ```
 ### ⇨  Informasi
 ```
