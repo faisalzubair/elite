@@ -46,7 +46,7 @@ rm -rf $HOME/elite
 pkg update && pkg upgrade
 pkg install python git -y
 pkg install python-pip
-git clone https://github.com/Dvanmeploph/elite
+git clone https://github.com/Itsmeafriliyan/elite
 ```
 ### ⇨  Menjalankan Script
 ```python
